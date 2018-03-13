@@ -54,6 +54,7 @@ public class FindBestRoute {
 	}
 
 	public boolean isPointInObstacles(Point A) {
+		//degs
 		return true;
 	}
 
