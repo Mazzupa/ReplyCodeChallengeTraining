@@ -4,16 +4,12 @@ public class Main {
 
 	public static void main(String args[]) {
 
-		FindBestRoute finder = new FindBestRoute();
+		Finder f = new Finder("./input/input_1.txt");
+		
+		char[][] b = f.creaMatrice();
+		
+		boolean path = bfs.pathExists(b, f.start, f.end);
 
-		finder.parse("./input/input_2.txt");
-
-		char[][] matrix = finder.convertiMatrice();
-
-		boolean pathExists = bfs.pathExists(matrix, new Point(finder.start.x,
-				finder.start.y), new Point(finder.end.x, finder.end.y));
-
-		System.out.println(pathExists ? "YES" : "NO");
-
+		System.out.println(path);
 	}
 }
