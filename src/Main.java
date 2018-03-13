@@ -6,7 +6,7 @@ public class Main {
 
 		FindBestRoute finder = new FindBestRoute();
 
-		finder.parse("./input/input_3.txt");
+		finder.parse("./input/input_2.txt");
 
 		char[][] matrix = finder.convertiMatrice();
 
